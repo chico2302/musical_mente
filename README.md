@@ -2,7 +2,7 @@
 
 Aplicativo desenvolvido em React Native com Expo que consome a API do iTunes (Apple) e implementa persistência remota no banco de dados em nuvem Google Firebase. O conceito visual e funcional baseia-se na engenharia reversa de metadados musicais ("SongDNA").
 
-**Link do Repositório:** [https://github.com/SEU_USUARIO/SEU_REPOSITORIO]
+**Link do Repositório:** [https://github.com/chico2302/musical_mente]
 
 ---
 
