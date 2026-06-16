@@ -1,6 +1,6 @@
-# SongDNA 🎵 - Análise Avançada de Faixas Musicais
+# Musical Mente 🎵 - Análise Avançada de Faixas Musicais
 
-Aplicativo desenvolvido em React Native com Expo que consome a API do iTunes (Apple) e implementa persistência remota no banco de dados em nuvem Google Firebase. O conceito visual e funcional baseia-se na engenharia reversa de metadados musicais ("SongDNA").
+Aplicativo desenvolvido em React Native com Expo que consome a API do iTunes (Apple) e implementa persistência remota no banco de dados em nuvem Google Firebase. O conceito visual e funcional baseia-se na engenharia reversa de metadados musicais ("Musical Mente").
 
 **Link do Repositório:** [https://github.com/chico2302/musical_mente]
 
@@ -43,7 +43,7 @@ O projeto adota uma arquitetura modular focada em componentização e separaçã
 - **Authentication:** Mapeamento conceitual para fluxo de usuários (Tela de Login).
 - **Cloud Firestore:** Salvamento, checagem e exclusão de dados em tempo real via persistência na nuvem (Recurso de Favoritos).
 
-### 6. Controles Visuais (Parte 3)
+### 6. Controles Visuais 
 - Implementação rigorosa do formulário técnico contendo: 4 Inputs de texto, 2 Pickers, 2 Sliders, 2 Switches e botões interativos.
 
 ---
@@ -51,10 +51,10 @@ O projeto adota uma arquitetura modular focada em componentização e separaçã
 ## 📦 Como Executar o Projeto Localmente
 
 1. Clone este repositório:
-   `git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git`
+   `git clone https://github.com/chico2302/musical_mente.git`
 
 2. Entre na pasta do projeto:
-   `cd SEU_REPOSITORIO`
+   `cd musical_mente`
 
 3. Instale as dependências ignorando conflitos de versão:
    `npm install --legacy-peer-deps`
