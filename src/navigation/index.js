@@ -2,7 +2,6 @@ import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
-// Importando as telas que vamos criar no passo seguinte
 import TelaLogin from '../screens/TelaLogin.js';
 import TelaLista from '../screens/TelaLista';
 import TelaDetalhe from '../screens/TelaDetalhe';
