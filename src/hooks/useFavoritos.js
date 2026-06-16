@@ -14,7 +14,6 @@ export function useFavoritos() {
 
     const caminhoColecao = collection(db, 'usuarios', uid, 'musicasFavoritas');
 
-    // O onSnapshot fica "ouvindo" o Firestore. Se algo mudar lá, ele atualiza o app na hora!
     const unsubscribe = onSnapshot(caminhoColecao, (snapshot) => {
       const listaMúsicas = [];
       snapshot.forEach((doc) => {
