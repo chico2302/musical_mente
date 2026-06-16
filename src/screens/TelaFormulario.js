@@ -11,7 +11,7 @@ export default function TelaFormulario({ navigation }) {
 
   return (
     <ScrollView style={styles.container}>
-      <Text style={styles.tituloSecaoForm}>Registro de Áudio (Parte 3)</Text>
+      <Text style={styles.tituloSecaoForm}>Registro de Áudio</Text>
       <TextInput style={styles.input} placeholder="Nome da Faixa" value={input1} onChangeText={setInput1} />
       
       <View style={styles.pickerContainer}>
