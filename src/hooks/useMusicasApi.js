@@ -17,15 +17,14 @@ export function useMusicasApi(termoDeBusca = 'indie pop') {
         const resposta = await fetch(url);
         const dados = await resposta.json();
 
-        // A API da Apple retorna um array chamado "results".
-        // Vamos mapear esses dados para os nomes de variáveis que o nosso App já usa!
+        // Mapeando esses dados para os nomes de variáveis que o App usa
         const musicasFormatadas = dados.results.map((faixa) => ({
           id: faixa.trackId.toString(),
           nome: faixa.trackName,
           resumo: faixa.artistName,
-          // A Apple manda a imagem em 100x100. Vamos trocar o texto da URL para pegar a versão 300x300 (melhor qualidade)
+          // Pegando a versão 300x300 ao invés da padrão 100x100
           imagem: faixa.artworkUrl100 ? faixa.artworkUrl100.replace('100x100', '300x300') : 'https://via.placeholder.com/300',
-          // Como a Apple não manda uma descrição longa, criamos uma dinâmica com os dados:
+          // A API do Itunes não envia descrição então uma genérica para todas músicas são geradas
           descricao: `Esta é a faixa "${faixa.trackName}" interpretada por ${faixa.artistName}. Lançada oficialmente como parte do projeto "${faixa.collectionName}", ela representa uma forte influência do gênero ${faixa.primaryGenreName} na indústria musical moderna.`,
           album: faixa.collectionName || 'Single',
           genero: faixa.primaryGenreName || 'Desconhecido',
@@ -42,7 +41,7 @@ export function useMusicasApi(termoDeBusca = 'indie pop') {
     };
 
     buscarMusicas();
-  }, [termoDeBusca]); // Se o termo de busca mudar, ele faz o fetch novamente
+  }, [termoDeBusca]); 
 
   return { musicas, carregando, erro };
 }
